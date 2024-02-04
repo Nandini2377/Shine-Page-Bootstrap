@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Serif:opsz,wght@8..144,600&display=swap");
+
+$nav-hover-effect: linear-gradient(
+  to right,
+  rgba(192, 48, 79, 1),
+  rgba(192, 48, 79, 1) 70%,
+  white 70%,
+  white 80%,
+  rgba(192, 48, 79, 1) 80%,
+  rgba(192, 48, 79, 1)
+);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins, sans-serif;
+}
+
+.font-family-heading {
+  font-family: Roboto serif;
+}
+
+.padding-body {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+.grey-color {
+  color: #747a82;
+}
+
+.text-sm {
+  font-size: 13px !important;
+}
+
+.grey-text {
+  font-size: 12px;
+}
+
+.pink-background {
+  background-color: #c0304f;
+}
+
+.cursour-class {
+  cursor: pointer;
+}
+
+/*nav-bar*/
+
+.nav-list {
+  &:hover {
+    border-bottom: 3px solid;
+    border-image: $nav-hover-effect;
+    border-image-slice: 1;
+    cursor: pointer;
+  }
+}
+
+.nav-second-logo {
+  position: absolute;
+  top: 2%;
+  right: 15%;
+}
+
+.nav-hr {
+  gap: 19%;
+}
+
+.rose {
+  right: -4.5%;
+  bottom: -30%;
+}
+
+.man {
+  left: -4%;
+  top: 160%;
+}
+
+/*ministries*/
+
+.ministries {
+  .ministries-bg {
+    background-color: #ffe6e0;
+  }
+  .ministries-border {
+    border-radius: 2rem 2rem 2rem 0rem;
+  }
+
+  .ministies-dot {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: #c0304f;
+    bottom: 6%;
+  }
+}
+
+.ministries-heading {
+  font-size: 30px;
+  width: 100%;
+}
+
+/*page-control*/
+.page-control {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+/*footer*/
+
+.footer {
+  background: url("images/footer/footer.png");
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+  th {
+    padding: 0.5rem 1rem 0.5rem 0rem;
+  }
+  td {
+    padding: 0.5rem 1rem 0.5rem 0rem;
+  }
+}
+
+.footer-statue {
+  top: -63%;
+  right: 1%;
+  width: 20%;
+}
+
+.nav-second-logo {
+  width: 36%;
+}
+
+.input-bg {
+  background-color: #626366;
+  outline: none;
+}
+
+.shine-item{
+  box-shadow: 18rem 18rem -17px rgba(2, 22, 5, 0.5);
+  cursor: pointer;
+}
+.shine-events > .col > .card {
+  
+}
+
+@media (min-width: 552px) {
+  .nav-second-logo {
+    top: 1%;
+    width: 26%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ministries-heading {
+    width: 75%;
+    font-size: 45px;
+  }
+
+  .nav-second-logo {
+    width: 20%;
+  }
+
+  .grey-text {
+    font-size: 14.5px;
+  }
+}
